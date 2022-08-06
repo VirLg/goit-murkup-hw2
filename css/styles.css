@@ -7,25 +7,17 @@
     --ptimary-heroy-color: #2F303A;
 }
 
-
-
-
-
-
 .body {
     color:var(--primary-text-color);
     background-color: #ffffff;
     font-family: Roboto, sans-serif;
     font-size: 14px;
     font-weight: 400;
-    
-
-
 }
+
 .list{
     list-style: none;
 }
-
 /* Button */
 .button{
     color: var(--primary-white-color);
@@ -33,13 +25,22 @@
     font-size: 16px;
     font-weight: 700;
 }
-
-
-
 .botton.primary {
 color: var(--primary-white-color);
 background-color: var(--accent-text-color);
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*secondary text #212121 */
@@ -74,8 +75,6 @@ background-color: var(--accent-text-color);
     color: var(--accent-text-color);
 }
 
-
-
 .logo-span {
     color: var(--accent-text-color);
     font-family: Raleway;
@@ -96,10 +95,7 @@ color: var(--primary-text-color);
 
 
 
-
-
-
-/* Section */
+/* Section idex*/
 
 .section-title {
     color: var(--title-text-color);
@@ -111,7 +107,7 @@ color: var(--primary-text-color);
     background-color: #F5F4FA;
 }
 
-/* bg */
+/* bg index*/
 .heroy-box {
     width: auto;
     height: 600px;
@@ -126,13 +122,13 @@ color: var(--primary-text-color);
 }
 
 
-/* Skills */
+/* Skills index*/
 
 .ul-skills .title{
     color: var(--title-text-color);
 }
 
-/* Our comand */
+/* Our comand index*/
 .employee {
     color: var(--title-text-color);
 }
@@ -141,13 +137,18 @@ color: var(--primary-text-color);
 
 
 
-/* our skills */
+/* our skills index*/
 .title {
     font-size: 14px;
     font-weight: 700;
 }
 
-/* our work */
+
+
+
+
+
+/* our work index*/
 
 /* footer */
 .footer-logo {
@@ -177,49 +178,11 @@ color: var(--primary-white-color);
 .address a:focus{
     color: var(--accent-text-color);
 }
-
-
-
-
-
 
 
 /* Portfolio */
 
 
-}
-
-
-.body {
-    color:var(--primary-text-color);
-    background-color: #ffffff;
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    
-
-
-}
-.list{
-    list-style: none;
-}
-
-/* Button */
-.button{
-    color: var(--primary-white-color);
-    background-color: var(--accent-text-color);
-    font-size: 16px;
-    font-weight: 700;
-}
-
-
-
-.botton.primary {
-color: var(--primary-white-color);
-background-color: var(--accent-text-color);
-}
-
-
 /*secondary text #212121 */
 /*main  text #757575 */
 /* white #FFFFFF */
@@ -229,55 +192,22 @@ background-color: var(--accent-text-color);
 /* bacgraund grey #F5F4FA */
 /* background akcent #2F303A */
 
-/* Header */
+/* Header portfolio*/
 .header {
     
 }
-/* Navigation */
-
-
-.nav-logo {
-    color: #000000;
-    font-family: Raleway sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-}
-.nav {
-    color: var(--title-text-color);
-    
-}
-
-.list a:hover,
-.list a:focus{
-    color: var(--accent-text-color);
-}
-
-
-
-.logo-span {
-    color: var(--accent-text-color);
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-}
-
-/* Autirizator */
-
-.nav-aut a {
-color: var(--primary-text-color);
-}
-
-.nav-aut a:hover,
-.nav-aut a:focus{
-    color: var(--accent-text-color);
-}
 
 
 
 
 
 
-/* Section */
+
+
+
+
+
+/* Section portfolio*/
 
 .section-title {
     color: var(--title-text-color);
@@ -289,7 +219,7 @@ color: var(--primary-text-color);
     background-color: #F5F4FA;
 }
 
-/* bg */
+/* bg  portfolio*/
 .heroy-box {
     width: auto;
     height: 600px;
@@ -319,39 +249,3 @@ color: var(--primary-text-color);
 
 
 
-/* our skills */
-.title {
-    font-size: 14px;
-    font-weight: 700;
-}
-
-/* our work */
-
-/* footer */
-.footer-logo {
-    color: var(--primary-white-color);
-    font-family: Raleway sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-}
-
-.footer p{
-color: var(--primary-white-color);
-
-}
-
-.footer-box {
-    height: 250px;
-    width: auto;
-    background-color: var(--ptimary-heroy-color);
-}
-
-.address a{
-    
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.address a:hover,
-.address a:focus{
-    color: var(--accent-text-color);
-}
