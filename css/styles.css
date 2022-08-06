@@ -1,0 +1,174 @@
+:root{
+    --primary-text-color:#757575;
+    --title-text-color: #212121;
+    --accent-text-color: #2196F3;
+    --primary-white-color: #ffffff;
+    --ptimary-heroy-color: #2F303A;
+}
+
+
+.body {
+    color:var(--primary-text-color);
+    background-color: #ffffff;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    
+
+
+}
+.list{
+    list-style: none;
+}
+
+/* Button */
+.button{
+    color: var(--primary-white-color);
+    background-color: var(--accent-text-color);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+
+.botton.primary {
+color: var(--primary-white-color);
+background-color: var(--accent-text-color);
+}
+
+
+/*secondary text #212121 */
+/*main  text #757575 */
+/* white #FFFFFF */
+/* blue #2196F3*/
+/* footer rgba(255, 255, 255, 0.6) */
+/* background #F5F5F5 */
+/* bacgraund grey #F5F4FA */
+/* background akcent #2F303A */
+
+/* Header */
+.header {
+    
+}
+/* Navigation */
+
+
+.nav-logo {
+    color: #000000;
+    font-family: Raleway sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+}
+.nav {
+    color: var(--title-text-color);
+    
+}
+
+.list a:hover,
+.list a:focus{
+    color: var(--accent-text-color);
+}
+
+
+
+.logo-span {
+    color: var(--accent-text-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* Autirizator */
+
+.nav-aut a {
+color: var(--primary-text-color);
+}
+
+.nav-aut a:hover,
+.nav-aut a:focus{
+    color: var(--accent-text-color);
+}
+
+
+
+
+
+
+/* Section */
+
+.section-title {
+    color: var(--title-text-color);
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.clients{
+    background-color: #F5F4FA;
+}
+
+/* bg */
+.heroy-box {
+    width: auto;
+    height: 600px;
+    background-color: var(--ptimary-heroy-color);
+}
+
+.main-title {
+    color: var(--primary-white-color);
+    text-align: center;
+    font-size: 44px;
+    font-weight: 900;
+}
+
+
+/* Skills */
+
+.ul-skills .title{
+    color: var(--title-text-color);
+}
+
+/* Our comand */
+.employee {
+    color: var(--title-text-color);
+}
+
+
+
+
+
+/* our skills */
+.title {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* our work */
+
+/* footer */
+.footer-logo {
+    color: var(--primary-white-color);
+    font-family: Raleway sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.footer p{
+color: var(--primary-white-color);
+
+}
+
+.footer-box {
+    height: 250px;
+    width: auto;
+    background-color: var(--ptimary-heroy-color);
+}
+
+.address a{
+    
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.address a:hover,
+.address a:focus{
+    color: var(--accent-text-color);
+}
