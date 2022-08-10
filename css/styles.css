@@ -63,6 +63,7 @@ html{
 
 /* Navigation */
 .nav-logo {
+    text-decoration: none;
     color: var(--title-text-color);
     font-family: Raleway, sans-serif;
     font-size: 26px;
