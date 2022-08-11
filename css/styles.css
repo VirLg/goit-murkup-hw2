@@ -17,14 +17,25 @@ html{
     --background-button: #F5F4FA;
 }
 body {
-    font-family: Roboto,sans-serif;
+    font-family: Roboto, sans-serif;
     color:var(--primary-text-color);
     background-color: var(--primary-white-color);
     font-size: 14px;
-    font-weight: 400;
-    line-height: 1.14;
-    letter-spacing: 3%;   
+    letter-spacing: 0.03em;   
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 .link{
     text-decoration: none;
   }
@@ -39,20 +50,35 @@ body {
     padding: 0;
     margin: 0;
 }
+/* убрал отступ снизу у картинки 4пикс */
+.img-view{
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
 /* Button */
 .button{
     padding: 10px 32px;
+
     color: var(--primary-white-color);
     background-color: var(--accent-text-color);
     font-family: Roboto, sans-serif;
     font-size: 16px;
     font-weight: 700;
     Line-height: 1.62;
-    letter-spacing: 3%;
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+
 }
 .button:focus,
 .button:hover{
-    background-color: var(--primary-text-color);
+    color: var(--title-text-color);
+    background-color: var(--background-button);
 }
 
 .button-seconary{
@@ -63,7 +89,9 @@ body {
     font-size: 16px;
     font-weight: 500;
     Line-height: 1.625;
-    letter-spacing: 3%;
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
 }
 .button-seconary:focus,
 .button-seconary:hover{
@@ -82,6 +110,7 @@ body {
 /* Header */
 
 /* Navigation */
+
 .nav-logo:focus,
 .nav-logo:hover{
     color: var(--accent-text-color);
@@ -96,14 +125,14 @@ body {
     font-size: 26px;
     font-weight: 700;
     line-height: 1.19;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
 }
 .nav {
     color: var(--title-text-color);
     text-decoration: none;
 }
 .current {
-        color: var(--accent-text-color);
+    color: var(--accent-text-color);
 }
 .list{
     margin: 0;
@@ -132,6 +161,7 @@ color: var(--primary-text-color);
 /* Section idex*/
 .section-title {
     margin: 0;
+
     color: var(--title-text-color);
     font-size: 36px;
     font-weight: 700;
@@ -142,36 +172,42 @@ color: var(--primary-text-color);
 /* bg index*/
 .heroy-box {
     margin-bottom: 94px;
-    text-align: center;
     width: auto;
+
+    text-align: center;
     background-color: var(--ptimary-heroy-color);
 }
 .main-title {
     margin-top: 0;
     margin-bottom: 30px;
+
     color: var(--primary-white-color);
     font-family: Roboto, sans-serif;
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
     text-transform: uppercase;
+    letter-spacing: 0.06em;
 }
 /* Skills index*/
 .title{
     margin: 0;
+
     font-family: Roboto, sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 16px;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 .section-title {
     margin-bottom: 50px;
+
     color: var(--title-text-color);
     font-size: 36px;
     font-weight: 700;
     line-height: 1.17;
+    letter-spacing: 0.03em;
 }
  p{
     margin: 0;
@@ -185,18 +221,19 @@ color: var(--primary-text-color);
 .employee {
     margin-top: 30px;
     margin-bottom: 10px;
+
     color: var(--title-text-color);
     font-family: Roboto, sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.18;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
 }  
 .employee-text {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.18;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
 }
 .section.skills{
     margin-bottom: 118px;
@@ -213,7 +250,7 @@ color: var(--primary-text-color);
     font-size: 26px;
     font-weight: 700;
     line-height: 1.19;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
 }
 .footer-logo:hover,
 .footer-logo:focus{
@@ -226,6 +263,7 @@ color: var(--primary-text-color);
 .footer-ul{
     margin: 20px 0 0 0;
     padding-bottom: 60px;
+
     list-style: none;
 }
 .footer-post {
@@ -242,14 +280,14 @@ color: var(--primary-text-color);
     text-decoration: none;
     color:rgba(255, 255, 255, 0.6);
     line-height: 1.71;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
 }
 .footer-map{
     font-style: normal;
     text-decoration: none;
     color: var(--primary-white-color);
     line-height: 1.71;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
 }
 .footer-map:hover,
 .footer-map:focus{
@@ -276,13 +314,6 @@ color: var(--primary-text-color);
 
 
 
-
-
-
-
-
-
-
 /* Section portfolio*/
 
 .section-title-portfolio{
@@ -294,15 +325,6 @@ color: var(--primary-text-color);
     background-color: #F5F4FA;
 }
 
-
-
-
-.main-title {
-    color: var(--primary-white-color);
-    text-align: center;
-    font-size: 44px;
-    font-weight: 900;
-}
 
 
 /* Skills */
@@ -317,21 +339,24 @@ color: var(--primary-text-color);
 }
 
 .portfolio {
-    text-decoration: none;
     margin: 0;
     padding: 20px 0px 6px 0px;
+
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
-    line-height: 2.11;
-    letter-spacing: 6%;
-    text-transform: capitalize;
+    line-height: 2;
+    letter-spacing: 0.03em;
+    
 }
 .pharagraf-portfolio{
     color: var(--primary-text-color);
     font-size: 16px;
+    font-weight: 400;
     line-height: 1.875;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
 }
 
 .link-portfolio{
@@ -345,8 +370,27 @@ color: var(--primary-text-color);
 
 
 
-.img-view{
-    display: block;
-    padding: 0;
-    margin: 0;
+/* 
+
+/* display flex */
+/* 
+/* 
+.ul-nav{
+    display: flex;
+   
 }
+
+.ul-nav li{
+    background-color: tomato;
+}
+
+.ul-nav .item+.item{
+    margin-left: 40px;
+}
+
+
+.site-nav .nav{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+} */ */ */

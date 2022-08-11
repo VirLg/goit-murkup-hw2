@@ -5,29 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Домашнє завдання 1</title>
+    <link rel="stylesheet" href="css/styles.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!--Header-->
     <header class="header">
       <!-- <nav> -->
-      <nav>
+      <nav class="site-nav">
         <div class="container">
           <a class="nav-logo" href="./index.html">
             <span class="logo-span">Web</span>Studio</a
           >
-          <ul class="list link">
-            <li><a href="./index.html" class="nav current">Студия</a></li>
-            <li><a href="./portfolio.html" class="nav">Потрфоліо</a></li>
-            <li><a href="" class="nav">Контакти</a></li>
+          <ul class="list link ul-nav">
+            <li class="item">
+              <a href="./index.html" class="nav current">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="nav">Потрфоліо</a>
+            </li>
+            <li class="item">
+              <a href="" class="nav">Контакти</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -60,7 +66,7 @@
       <!--our skills-->
       <section class="section skills">
         <div class="container skills">
-          <h2 class="section-title skills">Наші скіли</h2>
+          <h2 class="section-title skills visually-hidden">Наші скіли</h2>
           <ul class="list ul-skills">
             <li>
               <h3 class="title">Увага до деталей</h3>
