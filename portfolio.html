@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Домашнє завдання 1</title>
-    <link rel="stylesheet" href="css/styles.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -15,6 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!--Header-->
@@ -78,14 +78,18 @@
           <div class="container">
             <li>
               <a class="link portfolio" href="">
-                <img
-                  class="img-view"
-                  src="./images/img.jpg"
-                  alt="main page"
-                  width="370"
-                />
-                <h2 class="portfolio">Проєкт Prime</h2>
-                <p class="pharagraf-portfolio">Веб-сайт</p>
+                <div class="item-portfolio">
+                  <img
+                    class="img-view"
+                    src="./images/img.jpg"
+                    alt="main page"
+                    width="370"
+                  />
+                  <div class="border">
+                    <h2 class="portfolio">Проєкт Prime</h2>
+                    <p class="pharagraf-portfolio">Веб-сайт</p>
+                  </div>
+                </div>
               </a>
             </li>
           </div>
@@ -204,33 +208,35 @@
         </ul>
       </section>
     </main>
-    <footer class="footer footer-box container">
-      <a href="./index.html" class="footer-logo">
-        <span class="logo-span">Web</span>Studio</a
-      >
-      <address>
-        <ul class="footer-ul">
-          <li>
-            <a
-              class="footer-map"
-              href="https://goo.gl/maps/ebpLASN4Ghw9Ps9j9"
-              target="_blank"
-              rel="noopener"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li>
-            <a class="footer-contact" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="footer-contact" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
-    </footer>
+    <div class="footer-box">
+      <footer class="footer container">
+        <a href="./index.html" class="footer-logo">
+          <span class="logo-span">Web</span>Studio</a
+        >
+        <address>
+          <ul class="footer-ul">
+            <li>
+              <a
+                class="footer-map"
+                href="https://goo.gl/maps/ebpLASN4Ghw9Ps9j9"
+                target="_blank"
+                rel="noopener"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li>
+              <a class="footer-contact" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="footer-contact" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </footer>
+    </div>
   </body>
 </html>
