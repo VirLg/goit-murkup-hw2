@@ -120,6 +120,15 @@ body {
 
 }
 
+.header-nav {
+    
+    display: flex;
+    outline: 2px solid red;
+    align-items: center;
+    
+}
+
+
 /* Navigation */
 
 .nav-logo:focus,
@@ -139,6 +148,9 @@ body {
     letter-spacing: 0.03em;
 }
 .nav {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--title-text-color);
     text-decoration: none;
 }
@@ -160,8 +172,8 @@ body {
     font-weight: 700;
 }
 /* Autirizator */
-.nav-aut{   
-}
+
+
 .nav-aut a {
 color: var(--primary-text-color);
 }
@@ -169,6 +181,36 @@ color: var(--primary-text-color);
 .nav-aut a:focus{
     color: var(--accent-text-color);
 }
+.nav-aut li + li {
+    margin-left: 50px;
+}
+
+.nav-aut {   
+    margin-left: auto;
+}
+
+/* .nav-aut .link:first-child {
+    margin-right: 50px;
+} */
+
+
+.site-nav li {
+    outline: 2px solid tomato;
+    
+}
+
+.site-nav .item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.flex-nav {
+    display: flex;    
+}
+
+
+
+
+
 Section idex,
  section {
     padding-top: 94px;
