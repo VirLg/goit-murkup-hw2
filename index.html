@@ -25,10 +25,9 @@
         <a class="nav-logo" href="./index.html">
           <span class="logo-span">Web</span>Studio</a
         >
-        <!-- <nav class="site-nav"> -->
 
         <div class="lists">
-          <ul class="list link ul-nav flex-nav">
+          <ul class="list link ul-nav flex">
             <li class="item">
               <a href="./index.html" class="nav current">Студия</a>
             </li>
@@ -42,25 +41,23 @@
           <!-- </nav> -->
         </div>
 
-        <div class="container">
-          <ul class="nav-aut list flex-nav">
-            <li>
-              <a class="link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="nav-aut list flex">
+          <li>
+            <a class="link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
       </div>
     </header>
     <!--Main-->
     <main>
       <!--pointer-->
 
-      <!--bg-->
+      <!==================bg==============================>
 
       <section class="heroy-box">
         <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
@@ -70,11 +67,11 @@
         </button>
       </section>
 
-      <!--our skills-->
-      <section class="section skills">
+      <!================our skills======================>
+      <section class="section-skills">
         <div class="container skills">
           <h2 class="section-title skills visually-hidden">Наші скіли</h2>
-          <ul class="list ul-skills">
+          <ul class="list ul-skills flex">
             <li>
               <h3 class="title">Увага до деталей</h3>
               <p>
@@ -108,12 +105,12 @@
           </ul>
         </div>
       </section>
-      <!--our work-->
+      <!====================our work======================>
       <section class="section">
         <div class="container our-work">
           <h2 class="section-title">Чим ми займаємося</h2>
-          <ul class="list">
-            <li>
+          <ul class="list flex">
+            <li class="item-our-work">
               <img
                 class="img-view"
                 src="./images/scheme.jpg"
@@ -121,7 +118,7 @@
                 width="370"
               />
             </li>
-            <li>
+            <li class="item-our-work">
               <img
                 class="img-view"
                 src="./images/app.jpg"
@@ -129,7 +126,7 @@
                 width="370"
               />
             </li>
-            <li>
+            <li class="item-our-work">
               <img
                 class="img-view"
                 src="./images/tablet.jpg"
@@ -140,54 +137,62 @@
           </ul>
         </div>
       </section>
-      <!-- Our employee -->
+      <!=====================Our employee===================>
       <section class="section clients">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="list">
-            <li class="item-employee">
-              <img
-                class="img-view"
-                src="./images/one.jpg"
-                alt="photo men"
-                width="270"
-              />
-              <h3 class="employee">Ігор Дем'яненко</h3>
-              <p class="employee-text">Product Designer</p>
-            </li>
+          <ul class="list flex">
+            <div class="test-card">
+              <li class="item-employee">
+                <img
+                  class="img-view"
+                  src="./images/one.jpg"
+                  alt="photo men"
+                  width="270"
+                />
+                <h3 class="employee">Ігор Дем'яненко</h3>
+                <p class="employee-text">Product Designer</p>
+              </li>
+            </div>
 
-            <li>
-              <img
-                class="img-view"
-                src="./images/two.jpg"
-                alt="photo women"
-                width="270"
-              />
-              <h3 class="employee">Ольга Рєпіна</h3>
-              <p class="employee-text">Frontend Developer</p>
-            </li>
+            <div class="test-card">
+              <li class="item-employee">
+                <img
+                  class="img-view"
+                  src="./images/two.jpg"
+                  alt="photo women"
+                  width="270"
+                />
+                <h3 class="employee">Ольга Рєпіна</h3>
+                <p class="employee-text">Frontend Developer</p>
+              </li>
+            </div>
 
-            <li>
-              <img
-                class="img-view"
-                src="./images/three.jpg"
-                alt="photo men"
-                width="270"
-              />
-              <h3 class="employee">Микола Тарасов</h3>
-              <p class="employee-text">Marketing</p>
-            </li>
+            <div class="test-card">
+              <li class="item-employee">
+                <img
+                  class="img-view"
+                  src="./images/three.jpg"
+                  alt="photo men"
+                  width="270"
+                />
+                <h3 class="employee">Микола Тарасов</h3>
+                <p class="employee-text">Marketing</p>
+              </li>
+            </div>
 
-            <li>
-              <img
-                class="img-view"
-                src="./images/four.jpg"
-                alt="photo men"
-                width="270"
-              />
-              <h3 class="employee">Михайло Єрмаков</h3>
-              <p class="employee-text">UI Designer</p>
-            </li>
+            <div class="test-card">
+              <li>
+                <img
+                  class="img-view"
+                  src="./images/four.jpg"
+                  alt="photo men"
+                  width="270"
+                />
+                <h3 class="employee">Михайло Єрмаков</h3>
+                <p class="employee-text">UI Designer</p>
+              </li>
+            </div>
           </ul>
         </div>
       </section>

@@ -24,87 +24,98 @@ body {
     font-size: 14px;
     letter-spacing: 0.03em;   
 }
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-.link{
-    text-decoration: none;
-  }
-.container{
-    width: 1200px;
-    margin: 0 auto; 
-    
-    
-}
-.list{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-/* убрал отступ снизу у картинки 4пикс */
-.img-view{
-    display: block;
-    padding: 0;
-    margin: 0;
-}
+/*========Utilits=============  */
+            .visually-hidden {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                margin: -1px;
+                border: 0;
+                padding: 0;
+                
+                white-space: nowrap;
+                clip-path: inset(100%);
+                clip: rect(0 0 0 0);
+                overflow: hidden;
+            }
+            .link{
+                text-decoration: none;
+            }
+            .container{
+                width: 1200px;
+                margin: 0 auto; 
+                
+                
+            }
+            .list{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            /* убрал отступ снизу у картинки 4пикс */
+            .img-view{
+                display: block;
+                padding: 0;
+                margin: 0;
+            }
 
 
 
 
-/* Button */
-.button{
-    padding: 10px 32px;
-    border-radius: 4px;
+            /* Button */
+            .button{
+                padding: 10px 32px;
+                border-radius: 4px;
 
-    color: var(--primary-white-color);
-    background-color: var(--accent-text-color);
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    Line-height: 1.62;
-    letter-spacing: 0.06em;
+                color: var(--primary-white-color);
+                background-color: var(--accent-text-color);
+                font-family: Roboto, sans-serif;
+                font-size: 16px;
+                font-weight: 700;
+                Line-height: 1.62;
+                letter-spacing: 0.06em;
 
-    cursor: pointer;
+                cursor: pointer;
 
-}
-.button:focus,
-.button:hover{
-    color: var(--title-text-color);
-    background-color: var(--background-button);
-}
+            }
+            .button:focus,
+            .button:hover{
+                color: var(--title-text-color);
+                background-color: var(--background-button);
+            }
 
-.button-seconary{
-    padding: 6px 25px;
-    border-radius: 4px;
-    color: var(--title-text-color);
-    background-color: var(--background-button);
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    Line-height: 1.625;
-    letter-spacing: 0.06em;
+            .button-seconary{
+                padding: 6px 25px;
+                border-radius: 4px;
+                color: var(--title-text-color);
+                background-color: var(--background-button);
+                font-family: Roboto, sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                Line-height: 1.625;
+                letter-spacing: 0.06em;
 
-    cursor: pointer;
-}
-.button-seconary:focus,
-.button-seconary:hover{
-    color: var(--primary-white-color);
-    background-color: var(--accent-text-color);
-}
+                cursor: pointer;
+            }
+            .button-seconary:focus,
+            .button-seconary:hover{
+                color: var(--primary-white-color);
+                background-color: var(--accent-text-color);
+            }
 
-.main-button{
-    margin-bottom: 106px;
-}
+            .main-button{
+                margin-bottom: 106px;
+            }
+
+
+            .list{
+                margin: 0;
+                padding: 0;
+            }
+
+            .flex {
+                display: flex;    
+            }
 /*secondary text #212121 */
 /*main  text #757575 */
 /* white #FFFFFF */
@@ -114,29 +125,26 @@ body {
 /* bacgraund grey #F5F4FA */
 /* background akcent #2F303A */
 
-/* Header */
+/*=========Header===========*/
 .header{
     border-bottom: 1px solid #ECECEC;
-
-}
+    }
 
 .header-nav {
-    
+        
     display: flex;
     outline: 2px solid red;
-    align-items: center;
-    
+    align-items: center;    
 }
 
 
-/* Navigation */
+/*============Navigation=========*/
+
 
 .nav-logo:focus,
 .nav-logo:hover{
     color: var(--accent-text-color);
 }
-
-
 
 .nav-logo {
     text-decoration: none;
@@ -157,10 +165,7 @@ body {
 .current {
     color: var(--accent-text-color);
 }
-.list{
-    margin: 0;
-    padding: 0;
-}
+
 .list a:hover,
 .list a:focus{
     color: var(--accent-text-color);
@@ -171,7 +176,14 @@ body {
     font-size: 26px;
     font-weight: 700;
 }
-/* Autirizator */
+
+.ul-nav {
+    margin-left: 90px;
+}
+.ul-nav li + li {
+    margin-left: 50px;
+}
+/*======Autirizator======*/
 
 
 .nav-aut a {
@@ -185,40 +197,31 @@ color: var(--primary-text-color);
     margin-left: 50px;
 }
 
-.nav-aut {   
+
+
+.nav-aut {
     margin-left: auto;
 }
 
-/* .nav-aut .link:first-child {
-    margin-right: 50px;
-} */
 
+            Section idex,
+            section {
+                padding-top: 94px;
+                padding-bottom: 94px;
+            }
 
-.site-nav li {
-    outline: 2px solid tomato;
-    
-}
-
-.site-nav .item:not(:last-child) {
-    margin-right: 40px;
-}
-
-.flex-nav {
-    display: flex;    
-}
+            .section-title {
+                text-align: center;
+                margin: 0;
 
 
 
 
 
-Section idex,
- section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
-.section-title {
-    margin: 0;
+
+
+
 
     color: var(--title-text-color);
     font-size: 36px;
@@ -248,39 +251,44 @@ Section idex,
     text-transform: uppercase;
     letter-spacing: 0.06em;
 }
-/* Skills index*/
-.title{
-    margin: 0;
+/*================== Skills index=================*/
+            .title{
+                margin: 0;
 
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-.section-title {
-    margin-bottom: 50px;
-    /* padding-top: 94px; */
+                font-family: Roboto, sans-serif;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 16px;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+            }
+            .section-title {
+                margin-bottom: 50px;
+                /* padding-top: 94px; */
 
-    color: var(--title-text-color);
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-}
- p{
-    margin: 0;
-    padding: 0;
-}
+                color: var(--title-text-color);
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 1.17;
+                letter-spacing: 0.03em;
+            }
+            p{
+                margin: 0;
+                padding: 0;
+            }
 .ul-skills .title{
     margin-bottom: 10px;
     color: var(--title-text-color);
 }
 .skills {
-    padding-bottom: 0%;
+    padding-bottom: 24px;
 }
-/* Our comand index*/
+.section-skills {
+    padding-bottom: 0;
+}
+
+/* ===================Our employee index============== */
+
 .employee {
     margin-top: 30px;
     margin-bottom: 10px;
@@ -305,23 +313,35 @@ Section idex,
 
 
 
-
-.item-employee {
-    display: inline-block;
+.item-employee { 
     padding-bottom: 30px;
+    
+}
+
+
+
+.test-card {
+    background-color: #fff;
     text-align: center;
 }
 
-
-
-.section.skills{
-    /* margin-bottom: 118px; */
+.test-card:not(:last-child) {
+    margin-right: 30px;
 }
-/* our work index*/
-/* .container.our-work{
-    padding-bottom: 94px;
-} */
-/* footer */
+
+
+/*=============== our work index===============*/
+.container.our-work{
+    
+}
+
+.item-our-work:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+
+/*==================footer===================*/
 .footer-logo {
     display: block;
     padding-top: 60px;
@@ -383,7 +403,7 @@ Section idex,
 
 
 /*  */
-/* Portfolio */
+/*=====================Portfolio===================*/
 
 /*secondary text #212121 */
 /*main  text #757575 */
@@ -402,10 +422,10 @@ Section idex,
 
 /* Section portfolio*/
 
-.section-title-portfolio{
-    padding: 0;
-    margin: 0;
-}
+            .section-title-portfolio{
+                padding: 0;
+                margin: 0;
+            }
 
 .clients{
     background-color: #F5F4FA;
@@ -413,13 +433,13 @@ Section idex,
 
 
 
-/* Skills */
+/*==============Skills=============*/
 
 .ul-skills .title{
     color: var(--title-text-color);
 }
 
-/* Our comand */
+/*===============Our comand===========*/
 .employee {
     color: var(--title-text-color);
 }
@@ -428,19 +448,19 @@ Section idex,
 /* ========PORTFOLIO========= */
 
 
-.portfolio {
-    margin: 0;
-    padding: 20px 0px 6px 0px;
+            .portfolio {
+                margin: 0;
+                padding: 20px 0px 6px 0px;
 
-    text-decoration: none;
-    font-family: Roboto, sans-serif;
-    color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.03em;
-    
-}
+                text-decoration: none;
+                font-family: Roboto, sans-serif;
+                color: var(--title-text-color);
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 2;
+                letter-spacing: 0.03em;
+                
+            }
 .pharagraf-portfolio{
     color: var(--primary-text-color);
     font-size: 16px;
@@ -453,17 +473,13 @@ Section idex,
     text-decoration: none;
 }
 
-.portfolio-img{
-    padding: 0;
-    margin: 0;
-}
+            .portfolio-img{
+                padding: 0;
+                margin: 0;
+            }
 
 .item-portfolio {
-    display: inline-block;
-    
-
-    
-    
+    display: inline-block;  
     text-align: center;
 }
 .border {
@@ -477,27 +493,3 @@ Section idex,
 
 
 
-/* 
-
-/* display flex */
-/* 
-/* 
-.ul-nav{
-    display: flex;
-   
-}
-
-.ul-nav li{
-    background-color: tomato;
-}
-
-.ul-nav .item+.item{
-    margin-left: 40px;
-}
-
-
-.site-nav .nav{
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-} */ */ */
