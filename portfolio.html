@@ -20,31 +20,35 @@
     <!--Header-->
     <header class="header">
       <!-- <nav> -->
-      <nav>
-        <div class="container">
-          <a class="nav-logo" href="./index.html">
-            <span class="logo-span">Web</span>Studio</a
-          >
-          <ul class="flex-nav list link">
-            <li><a href="./index.html" class="nav">Студия</a></li>
-            <li>
+
+      <div class="container header-nav">
+        <a class="nav-logo" href="./index.html">
+          <span class="logo-span">Web</span>Studio</a
+        >
+
+        <div class="lists">
+          <ul class="list link ul-nav flex">
+            <li class="item">
+              <a href="./index.html" class="nav">Студия</a>
+            </li>
+            <li class="item">
               <a href="./portfolio.html" class="nav current">Потрфоліо</a>
             </li>
-            <li><a href="" class="nav">Контакти</a></li>
+            <li class="item">
+              <a href="" class="nav">Контакти</a>
+            </li>
           </ul>
+          <!-- </nav> -->
         </div>
-      </nav>
-      <div class="container">
-        <ul class="nav-aut list">
+
+        <ul class="nav-aut list flex">
           <li>
-            <a class="link flex-nav" href="mailto:info@devstudio.com"
+            <a class="link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="link flex-nav" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
+            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -52,50 +56,47 @@
     <main>
       <!--line-->
 
-      <!--Projects-->
+      <!======================Projects====================>
       <section class="section">
         <h1 class="section-title-portfolio visually-hidden">Portfolio</h1>
         <div class="container">
-          <ul class="list">
-            <li>
+          <ul class="list flex list-project">
+            <li class="item-project">
               <button type="button" class="button-seconary">Все</button>
             </li>
-            <li>
+            <li class="item-project">
               <button type="button" class="button-seconary">Веб-сайти</button>
             </li>
-            <li>
+            <li class="item-project">
               <button type="button" class="button-seconary">Додатки</button>
             </li>
-            <li>
+            <li class="item-project">
               <button type="button" class="button-seconary">Дизайн</button>
             </li>
-            <li>
+            <li class="item-project">
               <button type="button" class="button-seconary">Маркетинг</button>
             </li>
           </ul>
         </div>
-        <!--Card-->
-        <ul class="ul list">
-          <div class="container">
-            <li>
+        <!===================Card=====================>
+        <div class="container">
+          <ul class="ul list flex-project">
+            <li class="flex-card">
               <a class="link portfolio" href="">
-                <div class="item-portfolio">
-                  <img
-                    class="img-view"
-                    src="./images/img.jpg"
-                    alt="main page"
-                    width="370"
-                  />
-                  <div class="border">
-                    <h2 class="portfolio">Проєкт Prime</h2>
-                    <p class="pharagraf-portfolio">Веб-сайт</p>
-                  </div>
+                <img
+                  class="img-view"
+                  src="./images/img.jpg"
+                  alt="main page"
+                  width="370"
+                />
+                <div class="border">
+                  <h2 class="portfolio">Проєкт Prime</h2>
+                  <p class="pharagraf-portfolio">Веб-сайт</p>
                 </div>
               </a>
             </li>
-          </div>
-          <div class="container">
-            <li>
+
+            <li class="flex-card">
               <a class="link portfolio" href="">
                 <img
                   class="img-view"
@@ -103,13 +104,14 @@
                   alt="basketboll"
                   width="370"
                 />
-                <h2 class="portfolio">Постер New Orlean vs Golden Star</h2>
-                <p class="pharagraf-portfolio">Дизайн</p>
+                <div class="border">
+                  <h2 class="portfolio">Постер New Orlean vs Golden Star</h2>
+                  <p class="pharagraf-portfolio">Дизайн</p>
+                </div>
               </a>
             </li>
-          </div>
-          <div class="container">
-            <li>
+
+            <li class="flex-card">
               <a class="link portfolio" href="">
                 <img
                   class="img-view"
@@ -117,13 +119,14 @@
                   alt="fish"
                   width="370"
                 />
-                <h2 class="portfolio">Ресторан Seafoode</h2>
-                <p class="pharagraf-portfolio">Додаток</p>
+                <div class="border">
+                  <h2 class="portfolio">Ресторан Seafoode</h2>
+                  <p class="pharagraf-portfolio">Додаток</p>
+                </div>
               </a>
             </li>
-          </div>
-          <div class="container">
-            <li>
+
+            <li class="flex-card">
               <a class="link portfolio" href="">
                 <img
                   class="img-view"
@@ -131,13 +134,14 @@
                   alt="headphones"
                   width="370"
                 />
-                <h2 class="portfolio">Проєкт Prime</h2>
-                <p class="pharagraf-portfolio">Маркетинг</p>
+                <div class="border">
+                  <h2 class="portfolio">Проєкт Prime</h2>
+                  <p class="pharagraf-portfolio">Маркетинг</p>
+                </div>
               </a>
             </li>
-          </div>
-          <div class="container">
-            <li>
+
+            <li class="flex-card">
               <a class="link portfolio" href="">
                 <img
                   class="img-view"
@@ -145,13 +149,14 @@
                   alt="two boxes"
                   width="370"
                 />
-                <h2 class="portfolio">Проєкт Boxes</h2>
-                <p class="pharagraf-portfolio">Додаток</p>
+                <div class="border">
+                  <h2 class="portfolio">Проєкт Boxes</h2>
+                  <p class="pharagraf-portfolio">Додаток</p>
+                </div>
               </a>
             </li>
-          </div>
-          <div class="container">
-            <li>
+
+            <li class="flex-card">
               <a class="link portfolio" href="">
                 <img
                   class="img-view"
@@ -159,13 +164,14 @@
                   alt="monitor"
                   width="370"
                 />
-                <h2 class="portfolio">Inspiration has no Borders</h2>
-                <p class="pharagraf-portfolio">Веб-сайт</p>
+                <div class="border">
+                  <h2 class="portfolio">Inspiration has no Borders</h2>
+                  <p class="pharagraf-portfolio">Веб-сайт</p>
+                </div>
               </a>
             </li>
-          </div>
-          <div class="container">
-            <li>
+
+            <li class="flex-card">
               <a class="link portfolio" href="">
                 <img
                   class="img-view"
@@ -173,13 +179,14 @@
                   alt="two book pages"
                   width="370"
                 />
-                <h2 class="portfolio">Видання Limited Edition</h2>
-                <p class="pharagraf-portfolio">Дизайн</p>
+                <div class="border">
+                  <h2 class="portfolio">Видання Limited Edition</h2>
+                  <p class="pharagraf-portfolio">Дизайн</p>
+                </div>
               </a>
             </li>
-          </div>
-          <div class="container">
-            <li>
+
+            <li class="flex-card">
               <a class="link portfolio" href="">
                 <img
                   class="img-view"
@@ -187,13 +194,14 @@
                   alt="tisket"
                   width="370"
                 />
-                <h2 class="portfolio">Проект LAB</h2>
-                <p class="pharagraf-portfolio">Маркетинг</p>
+                <div class="border">
+                  <h2 class="portfolio">Проект LAB</h2>
+                  <p class="pharagraf-portfolio">Маркетинг</p>
+                </div>
               </a>
             </li>
-          </div>
-          <div class="container">
-            <li>
+
+            <li class="flex-card">
               <a class="link portfolio" href="">
                 <img
                   class="img-view"
@@ -201,12 +209,14 @@
                   alt="lop top"
                   width="370"
                 />
-                <h2 class="portfolio">Growing Business</h2>
-                <p class="pharagraf-portfolio">Додаток</p>
+                <div class="border">
+                  <h2 class="portfolio">Growing Business</h2>
+                  <p class="pharagraf-portfolio">Додаток</p>
+                </div>
               </a>
             </li>
-          </div>
-        </ul>
+          </ul>
+        </div>
       </section>
     </main>
     <div class="footer-box">

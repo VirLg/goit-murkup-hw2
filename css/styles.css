@@ -42,8 +42,10 @@ body {
                 text-decoration: none;
             }
             .container{
-                width: 1200px;
-                margin: 0 auto; 
+                width: 1170px;
+                margin: 0 auto;
+                padding-left: 15px;
+                padding-right: 15px; 
                 
                 
             }
@@ -133,7 +135,7 @@ body {
 .header-nav {
         
     display: flex;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
     align-items: center;    
 }
 
@@ -287,6 +289,10 @@ color: var(--primary-text-color);
     padding-bottom: 0;
 }
 
+.ul-skills {
+
+}
+
 /* ===================Our employee index============== */
 
 .employee {
@@ -438,6 +444,14 @@ color: var(--primary-text-color);
 .ul-skills .title{
     color: var(--title-text-color);
 }
+.item-skills {
+    
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+    
+}
+
+
 
 /*===============Our comand===========*/
 .employee {
@@ -478,18 +492,46 @@ color: var(--primary-text-color);
                 margin: 0;
             }
 
-.item-portfolio {
+/* .item-portfolio {
     display: inline-block;  
-    text-align: center;
-}
+   
+} */
 .border {
-    display: block;
+    width: 370px;
+    
     border-bottom: 3px solid #EEEEEE;
     border-left: 3px solid #EEEEEE;
     border-right:3px solid #EEEEEE;
-
+ text-align: center;
     padding-bottom: 30px;
+    padding-right: 10px;
 }
 
 
+/* ===============Projects=================== */
+.item-project:not(:last-child) {
+    margin-right: 8px;
+    
+}
 
+.list-project {
+    margin-bottom: 50px;
+    justify-content: center;
+}
+/* ===================Card====================== */
+.flex-project {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-card {
+    
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+
+.flex-card:nth-child(3n) {
+    margin-right: 0;
+}
