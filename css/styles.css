@@ -359,9 +359,13 @@ align-items: flex-start;
 
 
 /*==================footer===================*/
+.footer {
+    padding: 60px 0;
+    background-color: var(--ptimary-heroy-color);
+}
 .footer-logo {
     display: block;
-    padding-top: 60px;
+    margin-bottom: 20px;
 
 
     text-decoration: none;
@@ -377,23 +381,11 @@ align-items: flex-start;
     color: var(--accent-text-color);
 }
 
-.footer-box {  
-    background-color: var(--ptimary-heroy-color);
+.footer-ul .footer-item + .footer-item {
+    margin-top: 9px;
 }
-.footer-ul{
-    margin: 0px;
-    margin-top: 20px;
 
-    padding-left: 0px;
-    padding-bottom: 60px;
 
-    list-style: none;
-}
-.footer-post {
-    margin-bottom: 9px;
-    text-decoration: none;
-    color:var(--primary-white-color)
-}
 .footer-contact:hover,
 .footer-contact:focus{
     color:var(--accent-text-color);
