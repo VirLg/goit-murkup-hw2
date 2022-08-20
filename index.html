@@ -18,15 +18,15 @@
   </head>
   <body>
     <!--Header-->
-    <header class="header">
+    <header class="header flex">
       <!-- <nav> -->
 
-      <div class="container header-nav">
-        <a class="nav-logo" href="./index.html">
-          <span class="logo-span">Web</span>Studio</a
-        >
+      <div class="flex container">
+        <nav class="flex">
+          <a class="nav-logo" href="./index.html">
+            <span class="logo-span">Web</span>Studio</a
+          >
 
-        <div class="lists">
           <ul class="list link ul-nav flex">
             <li class="item">
               <a href="./index.html" class="nav current">Студия</a>
@@ -38,8 +38,9 @@
               <a href="" class="nav">Контакти</a>
             </li>
           </ul>
+
           <!-- </nav> -->
-        </div>
+        </nav>
 
         <ul class="nav-aut list flex">
           <li>
@@ -60,24 +61,26 @@
       <!==================bg==============================>
 
       <section class="heroy-box">
-        <h1 class="main-title">
-          Ефективні рішення для <br />
-          вашого бізнесу
-        </h1>
+        <div class="container">
+          <h1 class="main-title">
+            Ефективні рішення для <br />
+            вашого бізнесу
+          </h1>
 
-        <button type="button" class="button main-button">
-          Замовити послугу
-        </button>
+          <button type="button" class="button main-button">
+            Замовити послугу
+          </button>
+        </div>
       </section>
 
       <!================our skills======================>
-      <section class="section-skills">
-        <div class="container skills">
+      <section class="section skills">
+        <div class="container skills flex">
           <h2 class="section-title skills visually-hidden">Наші скіли</h2>
           <ul class="list ul-skills flex">
             <li class="item-skills">
               <h3 class="title">Увага до деталей</h3>
-              <p>
+              <p class="skills-item">
                 Ідейні міркування, і навить початок повсякденної роботи з
                 формування позиції.
               </p>
@@ -85,7 +88,7 @@
 
             <li class="item-skills">
               <h3 class="title">Пунктуальність</h3>
-              <p>
+              <p class="skills-item">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
@@ -93,7 +96,7 @@
 
             <li class="item-skills">
               <h3 class="title">Планування</h3>
-              <p>
+              <p class="skills-item">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
@@ -202,7 +205,7 @@
     </main>
     <div class="footer-box">
       <footer class="footer container">
-        <a href="./index.html" class="footer-logo">
+        <a href="./.html" class="footer-logo">
           <span class="logo-span">Web</span>Studio</a
         >
         <address>

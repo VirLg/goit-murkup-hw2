@@ -38,11 +38,28 @@ body {
                 clip: rect(0 0 0 0);
                 overflow: hidden;
             }
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+            img {
+                display: block;
+                margin: 0 auto;
+                cursor: pointer;
+                border: none;
+                border-radius: 4px;
+            }
+
+
             .link{
                 text-decoration: none;
             }
             .container{
-                width: 1170px;
+                width: 1200px;
                 margin: 0 auto;
                 padding-left: 15px;
                 padding-right: 15px; 
@@ -54,21 +71,28 @@ body {
                 padding: 0;
                 margin: 0;
             }
+
+
+
             /* убрал отступ снизу у картинки 4пикс */
-            .img-view{
+            /* .img-view{
                 display: block;
                 padding: 0;
                 margin: 0;
+            } */
+
+            
+            .section {
+                padding-top: 94px;
+                padding-bottom: 94px;
             }
 
-
-
-
+            
             /* Button */
             .button{
                 padding: 10px 32px;
                 border-radius: 4px;
-
+                border: none;
                 color: var(--primary-white-color);
                 background-color: var(--accent-text-color);
                 font-family: Roboto, sans-serif;
@@ -76,14 +100,13 @@ body {
                 font-weight: 700;
                 Line-height: 1.62;
                 letter-spacing: 0.06em;
-
                 cursor: pointer;
 
             }
             .button:focus,
             .button:hover{
                 color: var(--title-text-color);
-                background-color: var(--background-button);
+                background-color: rgba(0, 0, 0, 0.15);
             }
 
             .button-seconary{
@@ -104,19 +127,9 @@ body {
                 color: var(--primary-white-color);
                 background-color: var(--accent-text-color);
             }
-
-            .main-button{
-                margin-bottom: 106px;
-            }
-
-
-            .list{
-                margin: 0;
-                padding: 0;
-            }
-
             .flex {
-                display: flex;    
+                display: flex;
+                align-items: center;  
             }
 /*secondary text #212121 */
 /*main  text #757575 */
@@ -128,16 +141,11 @@ body {
 /* background akcent #2F303A */
 
 /*=========Header===========*/
-.header{
-    border-bottom: 1px solid #ECECEC;
-    }
 
-.header-nav {
-        
-    display: flex;
-    /* outline: 2px solid red; */
-    align-items: center;    
+.header.flex {
+    align-items: center;
 }
+
 
 
 /*============Navigation=========*/
@@ -163,6 +171,10 @@ body {
     padding-bottom: 32px;
     color: var(--title-text-color);
     text-decoration: none;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 .current {
     color: var(--accent-text-color);
@@ -190,6 +202,13 @@ body {
 
 .nav-aut a {
 color: var(--primary-text-color);
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.02em;
+
+
+
+
 }
 .nav-aut a:hover,
 .nav-aut a:focus{
@@ -198,33 +217,12 @@ color: var(--primary-text-color);
 .nav-aut li + li {
     margin-left: 50px;
 }
-
-
-
 .nav-aut {
     margin-left: auto;
-}
-
-
-            Section idex,
-            section {
-                padding-top: 94px;
-                padding-bottom: 94px;
-            }
-
-            .section-title {
-                text-align: center;
-                margin: 0;
-
-
-
-
-
-
-
-
-
-
+}            
+.section-title {
+    text-align: center;
+    margin: 0;
     color: var(--title-text-color);
     font-size: 36px;
     font-weight: 700;
@@ -234,17 +232,14 @@ color: var(--primary-text-color);
 }
 /* bg index*/
 .heroy-box {
-   
-    width: auto;
-
+   padding-top: 200px;
+   padding-bottom: 200px;
     text-align: center;
     background-color: var(--ptimary-heroy-color);
 }
-.main-title {
-    margin-top: 0;
+.main-title { 
     margin-bottom: 30px;
-    padding-top: 106px;
-
+   
     color: var(--primary-white-color);
     font-family: Roboto, sans-serif;
     font-size: 44px;
@@ -266,7 +261,7 @@ color: var(--primary-text-color);
             }
             .section-title {
                 margin-bottom: 50px;
-                /* padding-top: 94px; */
+               
 
                 color: var(--title-text-color);
                 font-size: 36px;
@@ -274,23 +269,37 @@ color: var(--primary-text-color);
                 line-height: 1.17;
                 letter-spacing: 0.03em;
             }
-            p{
-                margin: 0;
-                padding: 0;
-            }
+
+.skills-item {
+    line-height: 1.71;
+
+}
 .ul-skills .title{
     margin-bottom: 10px;
     color: var(--title-text-color);
 }
-.skills {
-    padding-bottom: 24px;
-}
-.section-skills {
-    padding-bottom: 0;
+
+
+
+.ul-skills .title{
+    color: var(--title-text-color);
+   
 }
 
-.ul-skills {
+.skills,.flex {
+     align-items: flex-start;
+     padding-bottom: 0;
+}
 
+
+.item-skills:not(:last-child) {
+     margin-right: 30px;
+}
+.item-skills {
+    
+    width: calc((100% - 90px) / 4);
+   
+    
 }
 
 /* ===================Our employee index============== */
@@ -337,9 +346,7 @@ color: var(--primary-text-color);
 
 
 /*=============== our work index===============*/
-.container.our-work{
-    
-}
+
 
 .item-our-work:not(:last-child) {
     margin-right: 30px;
@@ -439,17 +446,8 @@ color: var(--primary-text-color);
 
 
 
-/*==============Skills=============*/
 
-.ul-skills .title{
-    color: var(--title-text-color);
-}
-.item-skills {
-    
-    width: calc((100% - 90px) / 4);
-    margin-right: 30px;
-    
-}
+
 
 
 
