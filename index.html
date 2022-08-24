@@ -19,7 +19,7 @@
   <body>
     <!--Header-->
     <header class="header flex">
-      <!-- <nav> -->
+      <!--================ Navigation===================== -->
 
       <div class="flex container">
         <nav class="flex">
@@ -41,15 +41,15 @@
 
           <!-- </nav> -->
         </nav>
-
+        <!===================Autorizaciya====================== >
         <ul class="nav-aut list flex">
-          <li>
-            <a class="link" href="mailto:info@devstudio.com"
+          <li class="mailto">
+            <a class="link link-nav-mail flex" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="link link-nav-tel flex" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -61,25 +61,27 @@
       <!==================bg==============================>
 
       <section class="heroy-box">
-        <div class="container">
-          <h1 class="main-title">
-            Ефективні рішення для <br />
-            вашого бізнесу
-          </h1>
+       
+          <div class="container">
+            <h1 class="main-title">
+              Ефективні рішення для <br />
+              вашого бізнесу
+            </h1>
 
-          <button type="button" class="button main-button">
-            Замовити послугу
-          </button>
-        </div>
+            <button type="button" class="button main-button">
+              Замовити послугу
+            </button>
+          </div>
+        
       </section>
-
+</div>
       <!================our skills======================>
       <section class="section skills">
         <div class="container">
           <h2 class="section-title skills visually-hidden">Наші скіли</h2>
           <ul class="list ul-skills flex">
             <li class="item-skills">
-              <h3 class="title">Увага до деталей</h3>
+              <h3 class="title our-skills group-1">Увага до деталей</h3>
               <p class="skills-item">
                 Ідейні міркування, і навить початок повсякденної роботи з
                 формування позиції.
@@ -87,7 +89,7 @@
             </li>
 
             <li class="item-skills">
-              <h3 class="title">Пунктуальність</h3>
+              <h3 class="title our-skills group-2">Пунктуальність</h3>
               <p class="skills-item">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
@@ -95,14 +97,14 @@
             </li>
 
             <li class="item-skills">
-              <h3 class="title">Планування</h3>
+              <h3 class="title our-skills group-3">Планування</h3>
               <p class="skills-item">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
 
             <li class="item-skills">
-              <h3 class="title">Сусасні технології</h3>
+              <h3 class="title our-skills group-4">Сусасні технології</h3>
               <p>
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
@@ -157,7 +159,25 @@
               />
               <div class="test-card">
                 <h3 class="employee">Ігор Дем'яненко</h3>
-                <p class="employee-text">Product Designer</p>
+                <p class="employee-text">Product Desig ner</p>
+                <ul class="list flex employee-network">
+                  <li><a href="https://www.instagram.com/"
+                     target="_blank" rel="noopener">
+                     <img src="./images/insta.svg" alt="соціальна мережа"></a>
+                  </li>
+                  <li><a href="https://twitter.com/?lang=uk"
+                    target="_blank" rel="noopener">
+                    <img src="./images/twit.svg" alt="соціальна мережа"></a>
+                  </li>
+                  <li><a href="https://www.facebook.com/"
+                    target="_blank" rel="noopener">
+                    <img src="./images/fb.svg" alt="соціальна мережа"></a>
+                  </li>
+                  <li><a href="https://www.linkedin.com/"
+                    target="_blank" rel="noopener"></a>
+                    <img src="./images/in.svg" alt="соціальна мережа">
+                  </li>
+                </ul>
               </div>
             </li>
 
@@ -171,6 +191,24 @@
               <div class="test-card">
                 <h3 class="employee">Ольга Рєпіна</h3>
                 <p class="employee-text">Frontend Developer</p>
+                <ul class="list flex employee-network">
+                  <li><a href="https://www.instagram.com/"
+                     target="_blank" rel="noopener">
+                     <img src="./images/insta.svg" alt="соціальна мережа"></a>
+                  </li>
+                  <li><a href="https://twitter.com/?lang=uk"
+                    target="_blank" rel="noopener">
+                    <img src="./images/twit.svg" alt="соціальна мережа"></a>
+                  </li>
+                  <li><a href="https://www.facebook.com/"
+                    target="_blank" rel="noopener">
+                    <img src="./images/fb.svg" alt="соціальна мережа"></a>
+                  </li>
+                  <li><a href="https://www.linkedin.com/"
+                    target="_blank" rel="noopener"></a>
+                    <img src="./images/in.svg" alt="соціальна мережа">
+                  </li>
+                </ul>
               </div>
             </li>
 
@@ -184,6 +222,24 @@
               <div class="test-card">
                 <h3 class="employee">Микола Тарасов</h3>
                 <p class="employee-text">Marketing</p>
+                <ul class="list flex employee-network">
+                  <li><a href="https://www.instagram.com/"
+                     target="_blank" rel="noopener">
+                     <img src="./images/insta.svg" alt="соціальна мережа"></a>
+                  </li>
+                  <li><a href="https://twitter.com/?lang=uk"
+                    target="_blank" rel="noopener">
+                    <img src="./images/twit.svg" alt="соціальна мережа"></a>
+                  </li>
+                  <li><a href="https://www.facebook.com/"
+                    target="_blank" rel="noopener">
+                    <img src="./images/fb.svg" alt="соціальна мережа"></a>
+                  </li>
+                  <li><a href="https://www.linkedin.com/"
+                    target="_blank" rel="noopener"></a>
+                    <img src="./images/in.svg" alt="соціальна мережа">
+                  </li>
+                </ul>
               </div>
             </li>
 
@@ -197,11 +253,51 @@
               <div class="test-card">
                 <h3 class="employee">Михайло Єрмаков</h3>
                 <p class="employee-text">UI Designer</p>
+                <ul class="list flex employee-network">
+                  <li><a href="https://www.instagram.com/"
+                     target="_blank" rel="noopener">
+                     <img src="./images/insta.svg" alt="соціальна мережа"></a>
+                  </li>
+                  <li><a href="https://twitter.com/?lang=uk"
+                    target="_blank" rel="noopener">
+                    <img src="./images/twit.svg" alt="соціальна мережа"></a>
+                  </li>
+                  <li><a href="https://www.facebook.com/"
+                    target="_blank" rel="noopener">
+                    <img src="./images/fb.svg" alt="соціальна мережа"></a>
+                  </li>
+                  <li><a href="https://www.linkedin.com/"
+                    target="_blank" rel="noopener"></a>
+                    <img src="./images/in.svg" alt="соціальна мережа">
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
         </div>
       </section>
+      <!-- ============Main Clients============== -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Постійні клієнти</h2>
+    <ul class="list flex">
+    <li class="clients-item"><a href=""><img src="./images/Client 1.svg" alt="Лого клиента"></a></li>
+    <li class="clients-item"><a href=""><img src="./images/Client 2.svg" alt="Лого клиента"></a></li>
+    <li class="clients-item"><a href=""><img src="./images/Client 3.svg" alt="Лого клиента"></a></li>
+    <li class="clients-item"><a href=""><img src="./images/Client 4.svg" alt="Лого клиента"></a></li>
+    <li class="clients-item"><a href=""><img src="./images/Client 5.svg" alt="Лого клиента"></a></li>
+    <li class="clients-item"><a href=""><img src="./images/Client 6.svg" alt="Лого клиента"></a></li>
+    </ul>
+
+
+
+  </div>
+
+
+
+</section>
+
+
     </main>
 
     <footer class="footer">
@@ -209,7 +305,7 @@
         <a href="./index.html" class="footer-logo">
           <span class="logo-span">Web</span>Studio</a
         >
-        <address>
+        <address class="address flex">
           <ul class="footer-ul list">
             <li class="footer-item">
               <a
@@ -231,8 +327,21 @@
               >
             </li>
           </ul>
-        </address>
-      </div>
+         
+           
+           
+          <div class="contained">
+            <p class="">Приєднуйтесь</p>
+            <ul class="list flex footer-network">
+              <li><img src="./images/insta.svg" alt=""></li>
+              <li><img src="./images/twit.svg" alt=""></li>
+              <li><img src="./images/fb.svg" alt=""></li>
+              <li><img src="./images/in.svg" alt=""></li>
+            </ul>
+          </div>
+          </address>
+         </div>
+      
     </footer>
   </body>
 </html>
