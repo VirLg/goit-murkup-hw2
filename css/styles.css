@@ -315,25 +315,27 @@ margin-left: auto;
 
 .our-skills::before {
 content: '';
-display: inline-flex;
-width: 270px;
+display: block;
+
 height: 120px;
-margin-top: 30px;;
+margin-bottom: 30px;
+background-size: contain;
+background-position: center;
 }
-.group-1 {
+.group-1::before {
     
 background-repeat: no-repeat;
 background-image: url(../images/Group-1.svg);
 }
-.group-2 {
+.group-2::before {
 background-repeat: no-repeat;
 background-image: url(../images/Group-2.svg);
 }
-.group-3 {
+.group-3::before {
     background-repeat: no-repeat;
     background-image: url(../images/Group-3.svg);    
 }
-.group-4 {
+.group-4::before {
     background-repeat: no-repeat;
     background-image: url(../images/Group-4.svg);    
 }
@@ -526,6 +528,38 @@ align-items: flex-start;
     
 }
 
+.comin {
+display: inline-block;
+width: 44px;
+height: 44px;
+border-radius: 50%; 
+background-position: center;
+}
+.comin:not(:last-child) {
+    margin-right: 10px;
+}
+.comin.inst {
+background-image: url(../images/footer-inst.svg);
+}
+.comin.twit {
+    background-image: url(../images/footer-twit.svg);
+}
+.comin.facebook {
+    background-image: url(../images/footer-fb.svg);
+}
+.comin.linkedn {
+    background-image: url(../images/footer-ln.svg);
+}
+
+
+
+
+
+
+.comin:hover,
+.comin:focus {
+    background-color: var(--accent-text-color);
+}
 
 /*  */
 /*=====================Portfolio===================*/
