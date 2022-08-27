@@ -16,6 +16,7 @@ html {
   --ptimary-heroy-color: #c4c4c4;
   --background-button: #f5f4fa;
   --primary-footer-color: #2f303a;
+  --primary-icon-color: #afb1b8;
 }
 body {
   margin: 0;
@@ -206,8 +207,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.nav-aut a:hover,
-.nav-aut a:focus {
+.link-nav-mail:hover,
+.link-nav-mail:focus {
   color: var(--accent-text-color);
 }
 .nav-aut li + li {
@@ -227,7 +228,8 @@ img {
   background-color: #f5f4fa14;
 }
 
-.mailto {
+.mailto-fone,
+.mailto-post {
   align-items: center;
   display: inline-flex;
 }
@@ -235,13 +237,32 @@ img {
 .mailto-item {
   width: 32px;
   height: 16px;
+  fill: var(--primary-text-color);
 }
 .mailto-tel {
   width: 20px;
   height: 16px;
+  fill: var(--primary-text-color);
 }
 
-.link-nav-mail {
+.link-nav-mail:hover .mailto-iteml,
+.link-nav-mail:focus .mailto-item {
+  fill: var(--accent-text-color);
+}
+
+.mailto-item:hover,
+.mailto-item:focus {
+  fill: var(--accent-text-color);
+}
+
+.link-nav-tel:hover .mailto-tel,
+.link-nav-tel:focus .mailto-tel {
+  fill: var(--accent-text-color);
+}
+
+.mailto-tel:hover,
+.mailto-tel:focus {
+  fill: var(--accent-text-color);
 }
 
 .header {
@@ -380,8 +401,9 @@ img {
 }
 
 .social-icon {
-  width: 22px;
-  height: 22px;
+  width: 21px;
+  height: 21px;
+  fill: var(--primary-icon-color);
 }
 .social-item {
   display: flex;
@@ -392,6 +414,15 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   cursor: pointer;
+}
+.social-item:hover,
+.social-item:focus {
+  background-color: var(--accent-text-color);
+}
+
+.social-item:hover .social-icon,
+.social-item:focus .social-icon {
+  fill: var(--primary-white-color);
 }
 /*=============== our work index===============*/
 
@@ -414,20 +445,33 @@ img {
   display: block;
   width: 80px;
   height: 45px;
-  background-color: red;
+
+  fill: var(--primary-icon-color);
 }
 
 .client-icon {
   display: flex;
   width: 170px;
   height: 92px;
-  outline: 1px solid teal;
+  border: 1px solid var(--primary-icon-color);
+  border-radius: 4px;
   justify-content: center;
   align-items: center;
 }
 .client-our {
   column-gap: 30px;
 }
+
+.client-icon:hover .client-svg,
+.client-icon:focus .client-svg {
+  fill: var(--accent-text-color);
+}
+
+.client-icon:hover,
+.client-icon:focus {
+  border-color: var(--accent-text-color);
+}
+
 /*==================footer===================*/
 .footer {
   padding-top: 60px;
@@ -495,6 +539,13 @@ img {
   line-height: 2.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--primary-white-color);
+  font-weight: 700;
+}
+.social-icon-footer {
+  width: 21px;
+  height: 21px;
+  fill: var(--primary-white-color);
 }
 
 /*=====================Portfolio===================*/
@@ -583,8 +634,6 @@ img {
   margin-bottom: 30px;
   background: #ffffff;
   border: 1px solid #eeeeee;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .flex-card:nth-child(3n) {
@@ -593,6 +642,12 @@ img {
 
 .flex-card:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+
+.card-effect:hover,
+.card-effect:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* ==========index-test============ */
