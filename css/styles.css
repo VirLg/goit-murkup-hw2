@@ -153,7 +153,7 @@ img {
 .nav {
   display: block;
   padding-top: 32px;
-  /* padding-bottom: 32px; */
+  padding-bottom: 32px;
   color: var(--title-text-color);
   text-decoration: none;
   font-family: Roboto;
@@ -163,6 +163,7 @@ img {
 }
 .current {
   color: var(--accent-text-color);
+  position: relative;
 }
 
 .list a:hover,
@@ -192,11 +193,13 @@ img {
 
 .nav.current::after {
   content: '';
+  position: absolute;
   display: block;
   width: 100%;
   height: 4px;
   background-color: var(--accent-text-color);
-  margin-top: 20px;
+  bottom: 0;
+  border-radius: 2px;
 }
 
 /*======Autirizator======*/
@@ -237,32 +240,12 @@ img {
 .mailto-item {
   width: 32px;
   height: 16px;
-  fill: var(--primary-text-color);
+  fill: currentColor;
 }
 .mailto-tel {
   width: 20px;
   height: 16px;
-  fill: var(--primary-text-color);
-}
-
-.link-nav-mail:hover .mailto-iteml,
-.link-nav-mail:focus .mailto-item {
-  fill: var(--accent-text-color);
-}
-
-.mailto-item:hover,
-.mailto-item:focus {
-  fill: var(--accent-text-color);
-}
-
-.link-nav-tel:hover .mailto-tel,
-.link-nav-tel:focus .mailto-tel {
-  fill: var(--accent-text-color);
-}
-
-.mailto-tel:hover,
-.mailto-tel:focus {
-  fill: var(--accent-text-color);
+  fill: currentColor;
 }
 
 .header {
@@ -403,7 +386,7 @@ img {
 .social-icon {
   width: 21px;
   height: 21px;
-  fill: var(--primary-icon-color);
+  fill: currentColor;
 }
 .social-item {
   display: flex;
@@ -414,6 +397,7 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  color: var(--primary-icon-color);
 }
 .social-item:hover,
 .social-item:focus {
@@ -443,10 +427,10 @@ img {
 
 .client-svg {
   display: block;
-  width: 80px;
-  height: 45px;
+  /* width: 80px;
+  height: 45px; */
 
-  fill: var(--primary-icon-color);
+  fill: currentColor;
 }
 
 .client-icon {
@@ -457,6 +441,7 @@ img {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
+  color: var(--primary-icon-color);
 }
 .client-our {
   column-gap: 30px;
@@ -464,7 +449,7 @@ img {
 
 .client-icon:hover .client-svg,
 .client-icon:focus .client-svg {
-  fill: var(--accent-text-color);
+  fill: currentColor;
 }
 
 .client-icon:hover,
@@ -523,12 +508,13 @@ img {
 .footer-ul {
   display: inline-block;
 }
-.footer-item {
+
+.footer-1 {
   margin-right: 70px;
 }
-
 .footer-flex {
   display: flex;
+  align-items: baseline;
 }
 .footer-network {
   margin-top: 20px;
@@ -575,10 +561,16 @@ img {
 /*===============Our comand===========*/
 
 /* ========PORTFOLIO========= */
-
+.portfolio:hover,
+.portfolio:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .portfolio {
   margin: 0 0 4px 0;
-
+  display: block;
+}
+.portfolio-title {
   text-decoration: none;
   font-family: Roboto, sans-serif;
   color: var(--title-text-color);
@@ -650,12 +642,6 @@ img {
   margin-bottom: 0;
 }
 
-.card-effect:hover,
-.card-effect:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 /* ==========index-test============ */
 
 .test-section {
@@ -679,4 +665,54 @@ img {
   outline: 1px solid tomato;
   background-color: #2196f3;
   background-position: center;
+}
+
+/* ==============Modal Windov========== */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal-btn-bcg {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-left: auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--primary-white-color);
+}
+
+.modal-button {
+  width: 11px;
+  height: 11px;
 }

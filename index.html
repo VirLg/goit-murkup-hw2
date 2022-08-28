@@ -42,19 +42,21 @@
         <!===================Autorizaciya====================== >
         <ul class="nav-aut list flex">
           <li class="mailto-post">
-            <svg class="mailto-item">
-              <use href="./images/sprite.svg#icon-header-1"></use>
-            </svg>
             <a class="link flex link-nav-mail" href="mailto:info@devstudio.com"
               >info@devstudio.com
+              <svg class="mailto-item">
+                <use href="./images/sprite.svg#icon-header-1"></use>
+              </svg>
             </a>
           </li>
 
           <li class="mailto-fone">
-            <svg class="mailto-tel">
-              <use href="./images/sprite.svg#icon-header-2" height="16"></use>
-            </svg>
-            <a class="link link-nav-tel flex" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="link link-nav-tel flex" href="tel:+380961111111"
+              >+38 096 111 11 11
+              <svg class="mailto-tel">
+                <use href="./images/sprite.svg#icon-header-2" height="16"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -72,7 +74,9 @@
             вашого бізнесу
           </h1>
 
-          <button type="button" class="button main-button">Замовити послугу</button>
+          <button data-modal-open type="button " class="button main-button">
+            Замовити послугу
+          </button>
         </div>
       </section>
 
@@ -385,7 +389,7 @@
           <ul class="list flex client-our">
             <li>
               <a class="client-icon" href="">
-                <svg class="client-svg">
+                <svg class="client-svg" width="45" height="45">
                   <use href="./images/sprite.svg#icon-group"></use>
                 </svg>
               </a>
@@ -393,7 +397,7 @@
 
             <li>
               <a class="client-icon" href="">
-                <svg class="client-svg">
+                <svg class="client-svg" width="80" height="45">
                   <use href="./images/sprite.svg#icon-group-1"></use>
                 </svg>
               </a>
@@ -401,7 +405,7 @@
 
             <li>
               <a class="client-icon" href="">
-                <svg class="client-svg">
+                <svg class="client-svg" width="80" height="45">
                   <use href="./images/sprite.svg#icon-group-2"></use>
                 </svg>
               </a>
@@ -409,7 +413,7 @@
 
             <li>
               <a class="client-icon" href="">
-                <svg class="client-svg">
+                <svg class="client-svg" width="106" height="60">
                   <use href="./images/sprite.svg#icon-group-3"></use>
                 </svg>
               </a>
@@ -417,7 +421,7 @@
 
             <li>
               <a class="client-icon" href="">
-                <svg class="client-svg">
+                <svg class="client-svg" width="106" height="60">
                   <use href="./images/sprite.svg#icon-group-4"></use>
                 </svg>
               </a>
@@ -425,7 +429,7 @@
 
             <li>
               <a class="client-icon" href="">
-                <svg class="client-svg">
+                <svg class="client-svg" width="106" height="60">
                   <use href="./images/sprite.svg#icon-group-5"></use>
                 </svg>
               </a>
@@ -512,5 +516,16 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <a class="modal-btn-bcg" data-modal-close href=""
+          ><svg class="modal-button">
+            <use href="./images/sprite.svg#icon-Vector"></use></svg
+        ></a>
+      </div>
+    </div>
+
+    <script src="./modal.js"></script>
   </body>
 </html>
